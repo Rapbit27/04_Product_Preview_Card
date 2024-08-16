@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  font-family: "Montserrat";
+  line-height: 150%;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(../fonts/Fraunces/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+html {
+  background: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 90%;
+  margin: 10% 5%;
+  border-radius: 1rem;
+  background: white;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.image .desktop {
+  display: none;
+}
+
+.content {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.brand {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.brand-name {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0.125rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.price-1 {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.125rem;
+}
+
+.price-2 {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: hsl(158, 36%, 37%);
+  border: none;
+  padding: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+button img {
+  margin-right: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 38rem) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    max-width: 35rem;
+    max-height: fit-content;
+  }
+
+  .image {
+    min-width: 50%;
+    max-height: 100%;
+  }
+
+  .image img {
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .image .desktop {
+    display: flex;
+  }
+  .image .mobile {
+    display: none;
+  }
+
+  .content {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .brand-name {
+    letter-spacing: 0;
+  }
+
+  .prices {
+    width: 80%;
+  }
+}
